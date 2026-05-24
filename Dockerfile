@@ -6,7 +6,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Step 3 — Copy our portfolio into nginx's serving folder
 COPY index.html /usr/share/nginx/html/
-COPY assets/ /usr/share/nginx/html/assets/
 
 # Step 4 — Copy our custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
